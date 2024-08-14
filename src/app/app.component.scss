@@ -1,0 +1,143 @@
+mat-toolbar {
+  position:fixed;
+    background: #7ddc30;
+    color:black;
+    height: 70px;
+    h2{
+        color: white;
+        margin-left: 20px;
+        letter-spacing: 0.2em; 
+      }
+  }
+  .example-spacer {
+    flex: 1 1 auto;
+  }
+  .top-button{
+    
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 1rem;
+    border: none;
+    border-radius: 20%;
+    padding:12px;
+    background:#7ddc30 ;
+    cursor: pointer;
+
+  }
+  .logo-lg{
+    width: 18%;
+    height: 100px;
+  //   border-radius: 50%;
+
+  }
+  .logo-mb{
+    width: 35%;
+    height: 100px;
+  }
+ 
+  mat-sidenav {
+    // margin: 16px;
+    width: 240px;
+
+    // border-right: none;
+    background: rgba(252, 252, 252, 0.952);
+    color: white;
+    border-radius: 1px;
+    border-color: black;
+    padding: 16px;
+    text-align: center;
+  }
+  mat-sidenav-container {
+    height: calc(100vh - 71px);
+    position: fixed;
+    bottom: 0%;
+    width: 100%;
+  }
+
+  .content {
+    height: calc(100vh - 130px);
+    // border-radius: 10px;
+    margin: 16px;
+    margin-left: 32px;
+    display: flex;
+    justify-content: center;
+    // padding: 16px;
+    font-size: 2rem;
+    color: lightgray;
+  
+    // overflow: auto;
+  }
+
+  .menu-button {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 1rem;
+    border: none;
+    // border-radius: 20%;
+    padding:12px;
+    background:rgba(252, 252, 252, 0.952) ;
+    cursor: pointer;
+    // margin-bottom: 5px;
+    
+    // border-radius: 5px;
+    // border: white;
+    // background: rgba(252, 252, 252, 0.952); 
+
+     
+  
+    mat-icon {
+      margin-right: 8px;
+      color: #019a5d;
+    }
+    fa-icon {
+      margin-right: 8px;
+      // margin-left: 5px;
+      // margin:5px;
+      // color: #019a5d;
+      
+    }
+
+  }
+  .menu-button:hover{
+    background-color:rgb(222, 252, 201);
+  }
+  
+  span{
+    // color: #019a5d;
+    padding-left: 1px;
+  }
+  // .avatar {
+  //   margin-top: 16px;
+  //   width: 100px;
+  //   height: 100px;
+  //   border-radius: 50%;
+  // }
+  
+  // .name {
+  //   margin-top: 8px;
+  //   font-weight: normal;
+  //   color: black;
+  // }
+  
+  // .designation {
+  //   margin-top: 2px;
+  //   font-size: 0.7rem;
+  //   color: lightgrey;
+  // }
+  mat-divider {
+    margin-top: 16px;
+    margin-bottom: 16px;
+   
+    border-color: black;
+    
+  }
+  .footer{
+    position: fixed;
+    bottom: 0%;
+    padding: 30px;
+    width: 100%;
+    background-color: #7ddc30 ;
+  }

@@ -1,0 +1,58 @@
+<mat-toolbar>
+    <button mat-icon-button (click)="sidenav.toggle()" *ngIf="isMobile===true" >
+      <mat-icon>menu</mat-icon>
+    </button>
+    <img src="https://financialit.net/sites/default/files/intellismart.png" class="logo-lg" *ngIf="isMobile===false">
+    <img src="https://financialit.net/sites/default/files/intellismart.png" class="logo-mb" *ngIf="isMobile===true">
+    
+    <span class="example-spacer"></span>
+    <button [matMenuTriggerFor]="menu" class="top-button"><mat-icon>person</mat-icon> User Name</button>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item>Item 1</button>
+      <button mat-menu-item>Item 2</button>
+    </mat-menu>    
+</mat-toolbar>
+<mat-sidenav-container>
+  <mat-sidenav mode="side" opened>
+
+    <!-- <mat-divider></mat-divider> -->
+    
+    <button  class="menu-button" (click)="dashboard()">
+      <!-- <mat-icon class="icon-button">dashboard</mat-icon> -->
+      <fa-icon [icon]="icon3"></fa-icon>
+      <span>Dashboard</span>
+    </button>
+    
+    <button    class="menu-button" routerLink="/about">
+      <fa-icon [icon]="icon"></fa-icon>
+      <span>Authentication Device</span>
+    </button>
+    
+    <button  class="menu-button" (click)="profile()">
+      <fa-icon [icon]="icon2"></fa-icon>
+      <span>Security Management</span>
+    </button>
+    
+    <button  class="menu-button" (click)="profile()">
+      <fa-icon [icon]="upload"></fa-icon>
+      <span>Import Ticket</span>
+    </button>
+   
+    <button  class="menu-button" (click)="profile()">
+      <fa-icon [icon]="envelope"></fa-icon>
+      <span>Ticket Management</span>
+    </button>
+    
+    <button  class="menu-button" (click)="profile()">
+      <fa-icon [icon]="card"></fa-icon>
+      <span>User Management</span>
+    </button>  
+    
+    
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <router-outlet></router-outlet> 
+    <div class="footer"></div> 
+    
+  </mat-sidenav-content>
+</mat-sidenav-container>
